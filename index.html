@@ -54,10 +54,20 @@
             text-decoration: none !important;
             font-size: 24px;
         }
-        .footer-logo img{
+
+        .footer-logo img {
             width: 50px;
             border-radius: 50%;
             height: 50px;
+        }
+        .language-image{
+            width: 75px;
+            height: 75px;
+            float: left;
+            margin: 0 15px 0 15px;
+        }
+        #info p{
+            margin-left: 105px;
         }
     </style>
 </head>
@@ -93,7 +103,7 @@
     </nav>
 
     <div class="container full-sized" id="first">
-        <img src="/images/me.png" class="face-icon" id="my_face">
+        <img src="images/me.png" class="face-icon" id="my_face">
         Yuriy Astakhov
         <small>WEB & Backend PHP Developer</small>
     </div>
@@ -548,9 +558,45 @@
         <h1>Information</h1>
         <div class="row jumbotron">
             <div class="col-lg-12">
+                <h3>
+                    <img class="language-image" src="images/1.png">
+                    Language qualities:
+                </h3>
+                <p>
+                    I know English at intermediate level<br/>
+                    I read technical documentation freely, in case there are problems, always google some strange nuances.
+                </p>
+                <h3>
+                    <img class="language-image" src="images/2.png">
+                    Personal qualities:
+                </h3>
+                <p>
+                    Fast learner.<br/>
+                    I can not sit idle.<br/>
+                    I'm interested in new technologies.<br/>
+                    Consistent and responsible.<br/>
+                    I'm responsible for my code and worry about the life of the project.<br/>
+                </p>
+                <h3>
+                    <img class="language-image" src="images/3.png">
+                    Hobbies:
+                </h3>
+                <p>
+                    I play drums in groups.<br/>
+                    I like animals, especially dogs )<br/>
+                    I like cycling and traveling (in particular by bicycle).<br/>
+                    I take a great interest in the role movement on the motives of Tolkien's works,
+                    the Strugatsky brothers and related works of art. <br/>
+                    Also I like to play video games, but as a rule I change this hobby for interesting projects
+                </p>
+                <h3>
+                    <img class="language-image" src="images/4.png">
+                    My git-education
+                </h3>
                 <p>
                     Links to <a href="https://github.com/selmarinel" target="_blank">git-hub</a> and
                     <a href="https://bitbucket.org/selmarinel_nerdjin/" target="_blank">Bit bucket</a> profiles <br/>
+
                 </p>
             </div>
         </div>
@@ -591,25 +637,25 @@
                 <dl class="footer-nav">
                     <dt class="nav-title">PORTFOLIO</dt>
                     <dd class="nav-item"><a
-                            data-value = "link"
+                            data-value="link"
                             target="_blank"
                             href="https://bitbucket.org/selmarinel_nerdjin/thepit">PIT</a></dd>
                     <dd class="nav-item"><a
-                            data-value = "link"
+                            data-value="link"
                             target="_blank"
                             href="https://bitbucket.org/selmarinel_nerdjin/mylittlemvc">Ckaldaria</a>
                     </dd>
                     <dd class="nav-item"><a
-                            data-value = "link"
+                            data-value="link"
                             target="_blank"
                             href="https://bitbucket.org/selmarinel_nerdjin/ivanko-group">IvankoGroup</a>
                     </dd>
                     <dd class="nav-item"><a
-                            data-value = "link"
+                            data-value="link"
                             target="_blank"
                             href="https://github.com/selmarinel">GitHUB</a></dd>
                     <dd class="nav-item"><a
-                            data-value = "link"
+                            data-value="link"
                             target="_blank"
                             href="https://bitbucket.org/selmarinel_nerdjin/">BitBucket</a></dd>
                 </dl>
@@ -672,7 +718,7 @@
             goToAnchor(event, this);
         });
         $(".nav-item").on("click", "a", function (event) {
-            if($(this).attr("data-value") != "link"){
+            if ($(this).attr("data-value") != "link") {
                 goToAnchor(event, this);
             }
         })
