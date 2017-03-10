@@ -21,10 +21,11 @@
             text-align: center;
         }
 
-        .email-link{
+        .email-link {
             margin: 50px 0 0 0;
         }
-        .email-link i{
+
+        .email-link i {
             width: 75px;
             height: 75px;
             line-height: 75px;
@@ -35,6 +36,7 @@
             display: inline-block;
             color: #4fc1e9;
         }
+
         .social-link {
             width: 75px;
             height: 75px;
@@ -51,6 +53,11 @@
             color: #4fc1e9 !important;
             text-decoration: none !important;
             font-size: 24px;
+        }
+        .footer-logo img{
+            width: 50px;
+            border-radius: 50%;
+            height: 50px;
         }
     </style>
 </head>
@@ -414,7 +421,7 @@
     <section class="container" id="portfolio">
         <h1>Portfolio</h1>
         <div class="row jumbotron">
-            <div class="col-xs-4">
+            <div class="col-lg-4 col-sm-6 col-xs-12">
                 <div class="thumbnail">
                     <img src="https://pp.vk.me/c836733/v836733374/19f12/ZRw-UDcW_uA.jpg">
                     <div class="caption">
@@ -440,7 +447,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-xs-4">
+            <div class="col-lg-4 col-sm-6 col-xs-12">
                 <div class="thumbnail">
                     <img src="https://bytebucket.org/selmarinel_nerdjin/mylittlemvc/raw/cb5858b759cfce94d3c92da2b3ca630ab5a19a42/Ckaldaria/assets/img/bg.jpg">
                     <div class="caption">
@@ -464,7 +471,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-xs-4">
+            <div class="col-lg-4 col-sm-6 col-xs-12">
                 <div class="thumbnail">
                     <img src="https://bytebucket.org/selmarinel_nerdjin/ivanko-group/raw/0f48a8db4cd8f87f6b2ed70f19806c4721351713/public/images/none.jpg">
                     <div class="caption">
@@ -504,9 +511,9 @@
 
                         </div>
                         <div class="events-body">
-                            <h4 class="events-heading">"Kiev scientific and natural lyceum" \B9145</h4>
+                            <h4 class="events-heading">"Kiev scientific and natural lyceum"</h4>
                             <p>
-                                I graduated from the "Kiev scientific and natural lyceum" \B9145
+                                I graduated from the "Kiev scientific and natural lyceum"
                             </p>
                         </div>
                     </div>
@@ -568,22 +575,6 @@
                     <a href="https://www.facebook.com/selmarinel" target="_blank"><i class="fa fa-facebook"></i></a>
                 </div>
             </div>
-            <!--<ul class="list-group">-->
-            <!--<li class="list-group-item">-->
-            <!--<i class="fa fa-envelope"></i> selmarinel@gmail.com-->
-            <!--</li>-->
-            <!--<li class="list-group-item">-->
-            <!--<a href="https://vk.com/selmarinel" target="_blank"><i class="fa fa-vk"></i> VK</a>-->
-            <!--</li>-->
-            <!--<li class="list-group-item">-->
-            <!--<a href="https://www.facebook.com/selmarinel" target="_blank"><i class="fa fa-facebook"></i>-->
-            <!--Facebook</a>-->
-            <!--</li>-->
-            <!--<li class="list-group-item">-->
-            <!--<a href="https://www.linkedin.com/in/yurij-astakhov-757259105/" target="_blank"><i-->
-            <!--class="fa fa-linkedin"></i> LinkendIn</a>-->
-            <!--</li>-->
-            <!--</ul>-->
         </div>
     </section>
     <section class="container clearfix">
@@ -591,15 +582,49 @@
     </section>
     <footer class="footer">
         <div class="container">
-            <div class=footer-nav">
-                <dd class="nav-item">Skills</dd>
-                <dd class="nav-item">Experience</dd>
-                <dd class="nav-item">Portfolio</dd>
-            </div>
-            <div class=footer-nav">
-                <dd class="nav-item">Education</dd>
-                <dd class="nav-item">Info</dd>
-                <dd class="nav-item">Contacts</dd>
+            <div class="clearfix">
+                <div class="footer-logo"><a href="#app">
+                    <img src="images/me.png" class="">Selmarinel</a>
+                </div>
+                <dl class="footer-nav">
+                </dl>
+                <dl class="footer-nav">
+                    <dt class="nav-title">PORTFOLIO</dt>
+                    <dd class="nav-item"><a
+                            data-value = "link"
+                            target="_blank"
+                            href="https://bitbucket.org/selmarinel_nerdjin/thepit">PIT</a></dd>
+                    <dd class="nav-item"><a
+                            data-value = "link"
+                            target="_blank"
+                            href="https://bitbucket.org/selmarinel_nerdjin/mylittlemvc">Ckaldaria</a>
+                    </dd>
+                    <dd class="nav-item"><a
+                            data-value = "link"
+                            target="_blank"
+                            href="https://bitbucket.org/selmarinel_nerdjin/ivanko-group">IvankoGroup</a>
+                    </dd>
+                    <dd class="nav-item"><a
+                            data-value = "link"
+                            target="_blank"
+                            href="https://github.com/selmarinel">GitHUB</a></dd>
+                    <dd class="nav-item"><a
+                            data-value = "link"
+                            target="_blank"
+                            href="https://bitbucket.org/selmarinel_nerdjin/">BitBucket</a></dd>
+                </dl>
+                <dl class="footer-nav">
+                    <dt class="nav-title">PROFESSIONAL</dt>
+                    <dd class="nav-item"><a href="#skills">Skills</a></dd>
+                    <dd class="nav-item"><a href="#experience">Experience</a></dd>
+                    <dd class="nav-item"><a href="#portfolio">Portfolio</a></dd>
+                </dl>
+                <dl class="footer-nav">
+                    <dt class="nav-title">OTHER</dt>
+                    <dd class="nav-item"><a href="#education">Education</a></dd>
+                    <dd class="nav-item"><a href="#info">Info</a></dd>
+                    <dd class="nav-item"><a href="#contacts">Contacts</a></dd>
+                </dl>
             </div>
             <div class="footer-copyright text-center">
                 <small>
@@ -636,12 +661,21 @@
                 $face.addClass("face-icon-min");
             }
         });
-        $("nav").on("click", "a", function (event) {
+        function goToAnchor(event, self) {
             event.preventDefault();
-            var id = $(this).attr('href'),
+            var id = $(self).attr('href'),
                     top = $(id).offset().top;
             $('body,html').animate({scrollTop: top}, 666);
+        }
+
+        $("nav").on("click", "a", function (event) {
+            goToAnchor(event, this);
         });
+        $(".nav-item").on("click", "a", function (event) {
+            if($(this).attr("data-value") != "link"){
+                goToAnchor(event, this);
+            }
+        })
     });
 </script>
 </body>
