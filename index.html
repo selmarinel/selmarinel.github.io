@@ -51,6 +51,24 @@
             </div>
         </div>
     </div>
+
+    <section class="container" id="contacts" v-cloak>
+        <h1>Contacts</h1>
+        <div class="row jumbotron">
+            <div class="col-4">
+                <div class="email-link" v-for="link in links" v-if="!link.link">
+                    <i class="fa" :class="link.icon"></i> {{link.value}}
+                </div>
+            </div>
+            <div class="col-8 text-center">
+                <div class="social-link" v-for="link in links" v-if="link.link">
+                    <a :href="link.value"
+                       target="_blank"><i class="fa" :class="link.icon"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="container" id="summary" v-cloak>
         <h1>Summary</h1>
         <div class="row jumbotron">
@@ -111,11 +129,11 @@
                                 {{technology.name}}
                             </i>
                         </p>
-                        <a :href="project.link" class="btn btn-secondary">
+                        <a :href="project.link" class="btn btn-secondary" target="_blank" v-show="project.enable">
                             <i class="fa fa-link" aria-hidden="true"></i>
                             Visit
                         </a>
-                        <a :href="project.git" class="btn btn-outline-success">
+                        <a :href="project.git" class="btn btn-outline-success" target="_blank">
                             <i class="fa fa-github"></i>
                             GIT
                         </a>
@@ -141,23 +159,6 @@
                     {{hobbie.name}}
                 </li>
             </ul>
-        </div>
-    </section>
-
-    <section class="container" id="contacts" v-cloak>
-        <h1>Contacts</h1>
-        <div class="row jumbotron">
-            <div class="col-4">
-                <div class="email-link" v-for="link in links" v-if="!link.link">
-                    <i class="fa" :class="link.icon"></i> {{link.value}}
-                </div>
-            </div>
-            <div class="col-8 text-center">
-                <div class="social-link" v-for="link in links" v-if="link.link">
-                    <a :href="link.value"
-                       target="_blank"><i class="fa" :class="link.icon"></i></a>
-                </div>
-            </div>
         </div>
     </section>
 
@@ -232,7 +233,7 @@
                 education: [
                     {
                         "name": "National Technical University of Ukraine 'Kyiv Polytechnic Institute'",
-                        "description": "I'm studied in National Technical University of Ukraine 'Kyiv Polytechnic Institute'" +
+                        "description": "I`ve studied in National Technical University of Ukraine 'Kyiv Polytechnic Institute'" +
                         "on faculty of Electrical and Electronics Engineering" +
                         "Department of Networks and systems \n" +
                         "Graduated Master's Degree"
@@ -314,6 +315,7 @@
                         "link": "http://slangshot.vergo.space",
                         "git": "https://bitbucket.org/selmarinel_nerdjin/hipster_vocabruary",
                         "description": "Vacabruary site",
+                        "enable": true,
                         "stack": [
                             {"name": "Laravel 5.4 Framework"},
                             {"name": "MYSQL"},
@@ -330,6 +332,7 @@
                         "link": "http://thepit.in.ua",
                         "git": "https://bitbucket.org/selmarinel_nerdjin/thepit",
                         "description": "Post-apocalyptic festival site. ",
+                        "enable": false,
                         "stack": [
                             {"name": "Laravel 5.2 Framework"},
                             {"name": "MYSQL"},
@@ -347,7 +350,7 @@
                     {"name": "Computer games"},
                     {"name": "Web development"}
                 ],
-                summary: "Developer with experience in CI,Laravel and some Symfony 2/3 framework," +
+                summary: "Developer with experience in CI,Laravel," +
                 " VUEJS. Fluent with REST API," +
                 " CLI background tasks. Have good communication skills and pre-intermediate level of English." +
                 " Good team player, a guy who responsible for his code and worry about the life of the project. Fast learning." +
