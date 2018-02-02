@@ -55,12 +55,12 @@
     <section class="container" id="contacts" v-cloak>
         <h1>Contacts</h1>
         <div class="row jumbotron">
-            <div class="col-4">
+            <div class="col-lg-4 col-md-6 col-12">
                 <div class="email-link" v-for="link in links" v-if="!link.link">
                     <i class="fa" :class="link.icon"></i> {{link.value}}
                 </div>
             </div>
-            <div class="col-8 text-center">
+            <div class="col-lg-8 col-md-6 col-12 text-center">
                 <div class="social-link" v-for="link in links" v-if="link.link">
                     <a :href="link.value"
                        target="_blank"><i class="fa" :class="link.icon"></i></a>
@@ -107,6 +107,9 @@
                             </section>
                         </div>
                     </div>
+                    <div class="card-text">
+                        <span class="badge badge-default" v-for="skill in work.stack">{{skill.name}}</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -117,7 +120,7 @@
             <small>(Last {{projects.length}})</small>
         </h1>
         <div class="row jumbotron">
-            <div class="card col-6" v-for="project in projects">
+            <div class="card col-lg-6 col-md-6 col-12" v-for="project in projects">
                 <div class="card-block">
                     <div class="card-title">
                         <h4>{{project.name}}</h4>
@@ -270,8 +273,8 @@
                             {"name": "PHP 7.2"},
                             {"name": "MySQL"},
                             {"name": "Gherkin"},
-                            {"name": "Unit testing on Kahlan"},
-                            {"name": "Docker"},
+                            {"name": "PHPUnit"},
+                            {"name": "Api Testing"},
                             {"name": "CI/CD"}
                         ],
                         responsibility: "re-designed Development"
@@ -344,6 +347,20 @@
                     },
                 ],
                 projects: [
+                    {
+                        "name": "TetraCrypto",
+                        "src": "https://selmarinel.github.io/images/giphy.gif",
+                        "link": "http://tetracrypto.com",
+                        "git": "https://bitbucket.org/selmarinel_nerdjin/tetra",
+                        "description": "Sell Crypto currencies",
+                        "enable": true,
+                        "stack": [
+                            {"name": "Laravel 5.5 Framework"},
+                            {"name": "MYSQL"},
+                            {"name": "VUEJS 2"},
+                            {"name": "Nginx"}
+                        ]
+                    },
                     {
                         "name": "Slangshot",
                         "src": "https://selmarinel.github.io/images/giphy.gif",
